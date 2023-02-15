@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub blog GameLauncher</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: slategray;
+            font-family: Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+          background-color: rgb(93,93,93,1);
+            margin: auto;
+
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px; 
+            background-color:#2E6BAD;
+        }
+
+    
+
+       
+
+        .menu {
+            display: flex;
+            
+            background-color: rgb(50, 50, 50);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        .corpo {
+            display: flex;
+            
+        }
+
+        .lateral {
+            flex: 15%; 
+            background: rgb(217,169,249);
+background: linear-gradient(90deg, rgba(217,169,249,1) 0%, rgba(69,69,69,1) 85%, rgba(93,93,93,1) 100%);
+            padding: 20px; 
+            color: aliceblue;
+        }
+
+        .conteudo {
+            flex: 60%;
+            margin-left: 30px;
+        }
+
+        .conteudo img,
+        .lateral img,
+        .logo img {
+            max-width: 100%;
+        }
+
+        .rodape {
+            display: flex;
+            background-color: rgb(26, 26, 26);
+            color: white;
+            justify-content: center; 
+           height: 150px;
+        }
+        @media screen and (max-width: 650px) {
+            .cabecalho{
+            
+
+            }
+        
+            }
+        
+        @media screen and (max-width: 600px){
+            .menu{
+                flex-direction: column;
+                text-align: center; 
+            
+            }
+            .corpo{
+                flex-direction: column;
+            }
+            .conteudo{
+                order: 1;
+                margin-left: 0px; 
+                padding: 20px;
+            }
+            .lateral{
+                order: 2; 
+                color: aliceblue;
+            }
+        } 
+        .cabecalhoa{
+            color: white; 
+  align-items: center;
+       display: flex; 
+   flex-direction: column;
+        } 
+        .conteudo img{
+            width: 800px; 
+            
+        } 
+        .conteudo p{
+            width: 70%; 
+            
+            color: aliceblue;
+        } 
+        .menu img{
+            width: 50px;
+        } 
+        .conteudo h4{
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      
+        <div class="cabecalho">
+           <div class="cabecalhoa"><h1>Senac São Paulo</h1>
+        <h3>Desenvolvimento de Layout com</h3>
+        </div>     
+        </div>
+
+        <div class="menu">
+           <img src="imgatv5/logotest.png">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Contato</a> 
+        </div>
+
+        <div class="corpo">
+            <div class="lateral">
+                <h2>Noticias.</h2>
+                <img src="imgatv5/maxresdefault.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repudiandae alias
+                    error magnam? Dolorum magnam ipsum
+                    temporibus tempore voluptatibus
+                    consequuntur minima reprehenderit,
+                    ab iste dolor, nam culpa odit dolorem.
+                    Alias, ab.</p>
+                
+            </div>
+            <div class="conteudo">
+                <h1>Jogos do mês de Janeiro!</h1> 
+                <h4> Fev. 2023, Por Brunno.</h4>
+                <img src="imgatv5/fgg.png">
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repudiandae alias
+                    error magnam? Dolorum magnam ipsum
+                    temporibus tempore voluptatibus
+                    consequuntur minima reprehenderit,
+                    ab iste dolor, nam culpa odit dolorem.
+                    Alias, ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repudiandae alias
+                    error magnam? Dolorum magnam ipsum
+                    temporibus tempore voluptatibus
+                    consequuntur minima reprehenderit,
+                    ab iste dolor, nam culpa odit dolorem.
+                    Alias, ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repudiandae alias
+                    error magnam? Dolorum magnam ipsum
+                    temporibus tempore voluptatibus
+                    consequuntur minima reprehenderit,
+                    ab iste dolor, nam culpa odit dolorem.
+                    Alias, ab.</p>
+                
+              
+            
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>&copy; 2023 - Game Launcher Enterprise.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
